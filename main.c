@@ -4,7 +4,7 @@
 #include <memory.h>
 
 
-// 模拟生成一给对象
+// 模拟生成一个对象
 int new() {
     return 11;
 }
@@ -32,7 +32,7 @@ int template_new() {
             0
     );
 
-    // 将val函数的机器吗写入内存
+    // 将val函数的机器码写入内存
     memcpy(temp, code, sizeof(code));
 
     p_fun fun = temp;
